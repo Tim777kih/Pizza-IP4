@@ -33,6 +33,7 @@
     align-items: center;
     background-image: url(../images/non-feature-trick-making-pizza-home.jpg);
     margin-left: 50px;
+    color: #f2f2f2;
   }
   h2{
     color: red;
@@ -100,4 +101,10 @@ h1{
 }
 body{
   background-color: black;
+}
+.mapizza{
+  padding: 100px;
+}
+h3{
+  color: aliceblue;
 }

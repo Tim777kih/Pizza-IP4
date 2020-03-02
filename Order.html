@@ -16,16 +16,17 @@
     <div class="delivery">
         <form action="">
             <h1>Delivery.</h1><br>
-            <input type="text" placeholder="Enter Delivery Location"><br><br>
+            <input type="radio" name="location" onclick="calculatetotal()">Within Nairobi (Sh500)<br><br>
+            <input type="radio" name="location" onclick="calculatetotal()">Outside Nairobi (Sh1500)<br><br>
         </form>
         <p class="ford"> Delivery within the CBD is a constant charge of 500<br>Outside Nairobi Delivery is at a constant charge of 1500 shillings.</p>
         <form action="">
         </form>
         <form action="">
             <input type="number" placeholder="Total Charges"><br><br>
-            <button type="button" onclick="">Total Charges</button>
-        </form>
-        
+            <button type="button" onclick="calaculatetotal()">Total Charges</button>
+        </form><br><br><br>
+        <button onclick="history.go(-1)"> Back</button>
         
 
     </div>
