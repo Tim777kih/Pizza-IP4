@@ -19,7 +19,7 @@
     <a href="#checkout">Checkout</a>
   </div>
   <div class="container1" id="one">
-    <p class="welcome"><strong>WELCOME TO MOJO PIZZA</strong><br>For your delicious pizza cooked by<br>chefs from
+    <p class="welcome"><strong>WELCOME TO PIZZARIA</strong><br>For your delicious pizza cooked by<br>chefs from
       the homeland of pizzas,ITALY....<br>Now ataffordable price and custom made just to suit you</p>
     <p>We offer a variety of pizza in different sizes and we offer a special treat for our customers where they can
       select their toppings</p>
@@ -91,29 +91,29 @@
 
   <div class="container3">
     <h2>YOUR PIZZA<br>Make your order</h2>
-    <Form action="Order.html">
+    <Form action="" id="pizzaform">
       <label>PIZZA SIZES</label><br><br>
-      <input type="radio" name="selectedpizza" onclick="calculatetotal()"> Large (Ksh1200)<br>
-      <input type="radio" name="selectedpizza" onclick="calculatetotal()"> Medium (Ksh800)<br>
-      <input type="radio" name="selectedpizza" onclick="calculatetotal()"> Small (Ksh500)<br><br>
+      <input type="radio" class="selectedpizza" value="1200"> Large (Ksh1200)<br>
+      <input type="radio" class="selectedpizza" value="800" > Medium (Ksh800)<br>
+      <input type="radio" class="selectedpizza" value="500"> Small (Ksh500)<br><br>
       <label>Type of Toppings</label>
-      <select name="topping" id="topping" onchange="calculatetotal()">
+      <select name="topping" id="topping">
         <option value="none">Select toppings </option>
-        <option value="sausage">Sausage, caramelized onions, and fennel($5)</option>
-        <option value="peperoni">Pepperoni, tomatoes, mushrooms, and onion($5)</option>
-        <option value="bbq">BBQ sauce, grilled chicken, scallions, and cheddar cheese($7)</option>
-        <option value="corn">Corn and spicy Italian salami($8)</option>
-        <option value="hawaiian">Sausage and pineapple($10)</option>
-        <option value="spinach">Spinach, caramelized onion, and bacon($5)</option>
-        <option value="spinach2">Spinach, artichoke hearts, garlic, and red onion($9)</option>
-        <option value="goatcheese">Goat cheese with arugula and red onion($5)</option>
-        <option value="onion">Caramelized fennel, onion, olives, and Fontina cheese($5)</option>
-        <option value="brie">Brie and caramelized onion($8)</option>
-        <option value="brussels">Brussels sprouts, red onion, and ricotta($7)</option>
-        <option value="kale">Portobello mushrooms and kale($12)</option>
+        <option value="sausage">Sausage, caramelized onions, and fennel(Ksh150)</option>
+        <option value="peperoni">Pepperoni, tomatoes, mushrooms, and onion(Ksh100)</option>
+        <option value="bbq">BBQ sauce, grilled chicken, scallions, and cheddar cheese(Ksh200)</option>
+        <option value="corn">Corn and spicy Italian salami(Ksh100)</option>
+        <option value="hawaiian">Sausage and pineapple(Ksh100)</option>
+        <option value="spinach">Spinach, caramelized onion, and bacon(Ksh150)</option>
+        <option value="spinach2">Spinach, artichoke hearts, garlic, and red onion(Ksh90)</option>
+        <option value="goatcheese">Goat cheese with arugula and red onion(Ksh105)</option>
+        <option value="onion">Caramelized fennel, onion, olives, and Fontina cheese(Ksh100)</option>
+        <option value="brie">Brie and caramelized onion(Ksh80)</option>
+        <option value="brussels">Brussels sprouts, red onion, and ricotta(Ksh70)</option>
+        <option value="kale">Portobello mushrooms and kale(Ksh120)</option>
       </select><br><br>
       <label>Type of Crust</label>
-      <select name="crust" id="crust" onchange="calculatetotal()">
+      <select name="crust" id="crust">
         <option value="none">Select Crust</option>
         <option value="crust1">Stuffed Cheese (Ksh 100)</option>
         <option value="crust2">Gluten Free (Ksh 150)</option>
@@ -121,12 +121,33 @@
         <option value="crust4">Neapolitan Crust(Ksh 200)</option>
       </select><br>
 
-      <input type="submit" value="Order">
+      <label>Quantity</label><input type="text" name="quantity" id="quantity"><br><br>
+
+      <input type="checkbox" id="delivery">DELIVERED (Ksh1000)<br><br>
+      <input type="text" id="location">Location of Delivery<br><br>
+
+      <input type="submit" value="Order" onclick="calculateTotal()">
     </Form>
   </div>
 
   </div>
+  <div id="checkout">
+    <p>Total Billing</p>
+  </div><br><br><br>
+  <div id="contact">
+    <h5>CONTACT</h5>
+    <p>Contact us through our e-mail @pizzaria@gmail.com <br> For any inquires or feedback</p> <img
+      src="/images/mio-staging_mio-design_1581631970573_assets_1tJpSPjibT1VKElOQ412NUyU_pMHt0P3-_product-icons-priniciples-05.png"
+      alt="" id="qwe">
+  </div><br><br><br><br><br>
 
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 
