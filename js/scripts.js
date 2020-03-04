@@ -85,9 +85,9 @@ function getQuantity() {
 
     if (quantity.value != "") {
         howmany = parseInt(quantity.value);
-    }
+    };
     return howmany;
-}
+};
 
 
 //// Getting the totals
@@ -100,7 +100,7 @@ function calculateTotal() {
     //display the result
 
     document.getElementById('.checkout').innerHTML =  pizzaPrice;
-}
+};
 
 
 
