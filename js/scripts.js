@@ -1,6 +1,4 @@
-function goBack() {
-    window.history.back();
-}
+
 
 var pizza_prices = new Array();
 pizza_prices['Large'] = 1200;
