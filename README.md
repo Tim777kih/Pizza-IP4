@@ -1,8 +1,8 @@
-# 
+# PIZZARIA
 ## AUTHOR
 Timothy Austin
 ## Description 
-A software application that is visually appealing that shows a detailed work of what software developers do and links the user to the studio using email.
+A software application that is visually appealing that enables the user to order pizza online and get the total charges for it select toppings,crust type and has an option for delivery. 
 ### Technologies used
 JavaScript
 HTML
@@ -11,7 +11,7 @@ CSS
 ### Tech Requrements
 Any browser,recommended browser is Chrome
 ### Bugs
-
+The web app does not display the total amount of the billing.However working on the bug to resolve it.
 
 ### Content information
  MIT License
@@ -32,4 +32,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 #### Live page
-https://tim777kih.github.io/
+ https://tim777kih.github.io/Pizza-IP4/.
